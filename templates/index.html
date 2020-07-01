@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+
+<script type="text/javascript" src="{% static  'js/myjs.js'%}"></script>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Krona+One&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e1397c563c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="main"></div>
+<div class="burger" onclick="showHeader()"><span><i class="fas fa-bars"></i></span></div>
+<header id="main-header" class="show">
+		<div class="logo-block">
+			<a href="#" class="logo"><img src="{% static 'img/logo.png' %}" alt=""></a>
+		</div>
+		<ul class="nav">
+		<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+		<li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+		<li class="nav-item"><a href="#services" class="nav-link">Skills</a></li>
+		<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+		<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li></ul>
+</header>
+<div class="home" id="home">
+	<div class="home-slider-el">
+	<div class="slider">
+		<div class="slider-element active">
+			<p><h1>FullStack Development</h1></p>
+			<p class="second-text">Web-app , Site, Redesign, Landing page and Other</p>
+		</div>
+		<div class="slider-element">
+			<p><h1>Frontend Development</h1></p>
+			<p class="second-text">Site design ,Site redesign, Animation building</p>
+		</div>
+		<div class="slider-element">
+			<p><h1>Backend Development</h1></p>
+			<p class="second-text">CRUD System , CRM System , E-commerce site, MarketPlace, Api Integration, Membership integration  </p>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="works" id="works">
+	<div class="title">
+		<p><h3>My latest works </h3></p>
+	</div>
+	<div class="section-description">
+		<p>
+            Here is my self made projects and  commercial projects.
+        </p>
+	</div>
+	<div class="projects">
+		<ul>
+			
+			<li>
+				<div class="project-el" >
+					<div class="overlay" onclick="openModal(0)">
+						<div class="title2">
+							<p><h3>ChatArea</h3></p>
+						</div>
+						<i class="fas fa-search-plus" ></i>
+					</div>
+					
+					<img src="{% static 'img/image_original' %}" alt="">
+				</div>
+				<div class="modal">
+						<div class="modal-main">
+							<div class="modal-img">
+
+								<img src="{% static 'img/image_original' %}" alt="">
+							</div>
+							<div class="image-up"><i onclick="showInfo(0)" class="fas fa-angle-up"></i></div>
+							<div class="modal-detail">
+							<div class="title">
+								<p><h3>ChatArea</h3></p>
+							</div>
+							<div class="modal-description">
+								<p>This is ChatArea - Real Time chat .
+                                Frontend : HTML/CSS/JS and Jquery
+                                Backend : Django,DRF , Django-consumers .</p>
+							</div>
+							<button class="modal-close" onclick="closeModal(0)">Close</button>
+						</div>
+						<button class="modal-close-adapt" onclick="closeModal(0)">Close</button>
+						</div>
+					</div>
+			</li>
+			<li>
+				<div class="project-el" >
+
+					<div class="overlay" onclick="openModal(1)"><div class="title2">
+						<p><h3>Photogallery </h3></p>
+					</div><i class="fas fa-search-plus" ></i></div>
+
+					<img src="{% static 'img/image_original2' %}" alt="">
+				</div>
+					<div class="modal">
+						<div class="modal-main">
+							<div class="modal-img">
+
+								<img src="{% static 'img/image_original2' %}" alt="">
+
+							</div>
+							<div class="image-up"><i onclick="showInfo(1)" class="fas fa-angle-up"></i></div>
+							<div class="modal-detail">
+							<div class="title">
+								<p><h3>PhotoGallery</h3></p>
+							</div>
+							<div class="modal-description">
+								<p>That is PhotoGallery project build using HTML/CSS/JS and Jquery</p>
+							</div>
+
+
+						<button class="modal-close" onclick="closeModal(1)">Close</button>
+					</div>
+					<button class="modal-close-adapt" onclick="closeModal(1)">Close</button>
+					</div>
+					</div>
+			</li>
+            <li>
+				<div class="project-el" >
+
+					<div class="overlay" onclick="openModal(2)"><div class="title2">
+						<p><h3>Portfolio </h3></p>
+					</div><i class="fas fa-search-plus" ></i></div>
+
+					<img src="{% static 'img/Landing_Page.png' %}" alt="">
+				</div>
+					<div class="modal">
+						<div class="modal-main">
+							<div class="modal-img">
+
+								<img src="{% static 'img/Landing_Page.png' %}" alt="">
+
+							</div>
+							<div class="image-up"><i onclick="showInfo(2)" class="fas fa-angle-up"></i></div>
+							<div class="modal-detail">
+							<div class="title">
+								<p><h3>Portfolio</h3></p>
+							</div>
+							<div class="modal-description">
+								<p>That is my portfolio web-site .
+                                Frontend : HTML/CSS/JS
+                                Backend : Django</p>
+							</div>
+
+
+						<button class="modal-close" onclick="closeModal(2)">Close</button>
+					</div>
+					<button class="modal-close-adapt" onclick="closeModal(2)">Close</button>
+					</div>
+					</div>
+			</li>
+
+		</ul>
+
+	</div>
+</div>
+<div class="services" id="services">
+	<div class="title">
+		<p><h3>My skills</h3></p>
+	</div>
+	<div class="section-description">
+		<p>
+            Here is my best skills that i have recieved from courses , documentations, books and also from my university program and from projects that i make for practice.
+        </p>
+	</div>
+	<div class="skills">
+		<ul>
+
+			<li><div class="skill"><h2>Frontend </h2><p>
+
+                    <p>HTML/CSS</p>
+                    <p>JavaScript</p>
+                    <p>Jquery</p>
+                    <p>React</p>
+
+            </p></div></li>
+			<li><div class="skill"><h2>Backend</h2><p>
+
+                    <p>Python</p>
+                    <p>Django</p>
+                    <p>Django REST Framework</p>
+                    <p>Django-consumers</p>
+
+            </p></div></li>
+			<li><div class="skill"><h2>Databases</h2><p>
+
+                    <p>SQL</p>
+                    <p>Sqlite</p>
+                    <p>MySQl</p>
+
+            </p></div></li>
+			<li><div class="skill"><h2>Languages</h2><p>
+
+                    <p>Ukrainian</p>
+                    <p>Russian</p>
+                    <p>English</p>
+
+            </p></div></li>
+			<li><div class="skill"><h2>IDE</h2><p>
+
+                    <p>Pycharm</p>
+                    <p>Sublime</p>
+                    <p>Visual Studio</p>
+
+            </p></div></li>
+			<li><div class="skill"><h2>Other</h2><p>
+
+                    <p>Git</p>
+                    <p>Django CMS</p>
+                    <p>Bash Scripting</p>
+                    <p></p>
+
+            </p></div></li>
+		</ul>
+
+	</div>
+</div>
+
+<div class="about" id="about">
+	<div class="title">
+		<p><h3>About me</h3></p>
+	</div>
+	<div class="section-description">
+		<p>
+            Hello ! I am Taras  and i am software engineer  working on web applications and web infrasctructure.I have been developing for
+            1 year  but tinkering since a kid. I started in freelance services  like freelancehunt and upwork.
+        </p>
+	</div>
+	<div class="info">
+		<ul>
+
+			<li><div class="info-el-img"><img src="{% static 'img/photo_2020-06-22_01-20-15.jpg' %}" alt="">
+
+
+			</div></li>
+			<li><div class="info-el"><h2>What i do</h2><p>
+               Web-site building.
+                Web-site redesign.
+                CRUD/CRM system building.
+                Developing Real Time apps like Real Time chat .
+                Also may work as Frontend or Backend developer.
+
+
+            </p></div></li>
+			<li><div class="info-el"><h2>Education and Work Experience</h2><p>
+                    Education: Bachelor of Computer Science in Lviv Polytechnic Natioanal University 2018 - 2022<br>
+                    Work Experience:<br> November 2019 - January 2020. Developing and fixing backend for Meingrenzpacket.
+                    Technologies that  i used : Python, Django, Django CMS ,Jquery.<br>
+                    5 June 2020 -  10 June 2020. Adding fields for adding multiple images on Iframe.Technologies that  i used :Python,Django,Jquery.
+
+            </p></div></li>
+			<li><div class="info-el"><h2>Hobbies</h2><p>
+                Getting lost in a good book<br>
+                Feeling the music , here is my Music channel: <a href="https://t.me/mussiiiiiicccc" style="text-decoration: none">Music Channel</a><br>
+                Anything about Python
+            </p></div></li>
+
+		</ul>
+	</div>
+</div>
+<div class="contact" id="contact">
+	<div class="title"><p><h3>Get in touch with me</h3></p></div>
+	<div class="connect-form">
+		<div class="form-text">
+			<div class="title"><p><h3>Connect with me if :</h3></p></div>
+			<div class="section-description"><p>
+                You have any questions about me or about my projects.
+                Just text me if you have any interesting proposal or project.
+
+            </p></div>
+			<div class="title"><p><h3>Fill the form if :</h3></p></div>
+			<div class="section-description"><p>
+                You want to cooperate with me and make a few projects together.
+                If you need me to make you any site or app just text me and send me your  Technical task.
+            </p></div>
+
+		</div>
+		<form method="post"  id="formdata" enctype="multipart/form-data" >
+            {% csrf_token %}
+			<p><label for="name"><input type="text" name="name" placeholder="Your Name"></label></p>
+			<p><label for="email"><input type="email" name="email" placeholder="Your Email"></label></p>
+			<p><label for="subject"><input type="text" name="subject" placeholder="Subject"></label></p>
+			<p><label for="message"><textarea name="message" id="message"  placeholder="Message"></textarea></label></p>
+			<p><div class="drag-and-drop" id="dropzone"><input type="file" id="f" name="file" multiple  onchange="handleFiles(this.files)">
+				<label class="section-description"  for="file">Drag and Drop File</label></div>
+			<p><label><input type="submit" value="Submit" id="form" ></label></p>
+		</form>
+	</div>
+
+</div>
+<footer>
+	<div class="footer">
+		<ul>
+			<li><a target="_blank" href="https://www.instagram.com/taras_il/"><i class="fab fa-instagram"></i></a></li>
+			<li><a target="_blank" href="https://github.com/Unlimit78"><i class="fab fa-github"></i></a></li>
+			<li><a target="_blank" href="https://t.me/taras_il"><i class="fab fa-telegram"></i></a></li>
+			<li><a  target="_blank" href="skype:[taras_ilyashchuk161]?userinfo"><i class="fab fa-skype"></i></a></li>
+		</ul>
+		<div class="last-words">
+			<p>
+                This is my portfolio site . Here you can see my works and skills and here you can connect with me.
+            </p>
+		</div>
+		<div class="copyright">
+			<p> T.Ilyashchuk 2020</p>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
